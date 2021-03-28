@@ -1,0 +1,19 @@
+a{
+    color: inherit;
+  }
+  a:hover{
+    color: inherit !important;
+    text-decoration: none !important;
+  }
+  a::after{
+    color: inherit !important;
+    text-decoration: none !important;
+  }
+  a::before{
+    color: inherit !important;
+    text-decoration: none !important;
+  }
+  a:focus{
+    color: inherit !important;
+    text-decoration: none !important;
+  }
