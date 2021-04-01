@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from "react-redux";
 import { withRouter } from "react-router-dom";
-import { singinUser } from "../../../Action/Public/Users/Login";
+import { singinUser } from "../../../Action/Public/Users";
 import FormFields from "../../../UserInterface/Form/formFields";
 import { update,generateData,isFormValid } from "../../../UserInterface/Form/formAction";
 import { Grid,CardMedia,Typography,Button } from '@material-ui/core';

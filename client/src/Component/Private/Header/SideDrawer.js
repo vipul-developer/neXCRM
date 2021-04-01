@@ -1,8 +1,8 @@
 import React from 'react';
 import { connect } from "react-redux";
 import { Link,withRouter } from "react-router-dom";
-import { Drawer,List,ListSubheader,ListItem,ListItemIcon,ListItemText,Collapse } from "@material-ui/core";
-import { makeStyles, useTheme } from '@material-ui/core/styles';
+import { Drawer,List,ListSubheader,ListItem,ListItemText,Collapse } from "@material-ui/core";
+import { makeStyles } from '@material-ui/core/styles';
 import ExpandLess from '@material-ui/icons/ExpandLess';
 import ExpandMore from '@material-ui/icons/ExpandMore';
 const drawerWidth = 240;
@@ -26,7 +26,6 @@ const useStyles = makeStyles((theme) => ({
   }));
 const SideDrawer = (props) => {
     const classes = useStyles();
-    const theme = useTheme();
     const [open, setOpen] = React.useState(true);
     const handleClick = () => {
         setOpen(!open);

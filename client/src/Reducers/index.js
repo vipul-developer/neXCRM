@@ -1,7 +1,7 @@
 import { combineReducers } from "redux";
-import singinUser from "./Public/Users/Login";
+import user from "./Public/Users";
 const rootReducer = combineReducers({
-    singinUser,
+    user
 });
 
 export default rootReducer;

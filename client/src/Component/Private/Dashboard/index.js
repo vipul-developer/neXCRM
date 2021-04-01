@@ -1,14 +1,13 @@
-import React, { Component } from 'react'
-import { Link,withRouter } from "react-router-dom";
+import React from 'react'
+import { withRouter } from "react-router-dom";
 import { connect } from "react-redux";
 
-class Dashboard extends Component {
-    render() {
-        return (
-            <div className="dashboard">
-                Dashboard
-            </div>
-        )
-    }
-}
+const Dashboard = ({user}) => {
+    return (
+        <div>
+            {user.userData.name}
+        </div>
+    );
+};
+
 export default connect()(withRouter(Dashboard));
