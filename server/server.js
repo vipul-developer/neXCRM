@@ -62,7 +62,6 @@ const { auth } = require("./Middlewares/auth");
 
 //=============== ROUTER  INIT ==============//
 const userRouter = require("./Routers/users");
-
 //=== AUTHENTICATION API START ====//
 app.get("/api/users/auth",auth,userRouter.userAuth);
 //=== AUTHENTICATION API ENDING ===//
@@ -72,7 +71,6 @@ app.post("/api/users/register",userRouter.userRegister);
 app.post("/api/users/login",userRouter.userLogin);
 app.get("/api/users/logout",auth,userRouter.userLogout);
 //====== USER API END ======//
-
 
 const port = process.env.PORT || 3002;
 app.listen(port, () => {

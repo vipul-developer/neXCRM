@@ -63,7 +63,7 @@ const SideDrawer = (props) => {
                 <Collapse in={open} timeout="auto" unmountOnExit>
                     <List component="div" disablePadding>
                         <ListItem button className={classes.nested} onClick={() => props.onClose(!props.open)}>
-                            <Link to="/"><ListItemText primary="my cart" /></Link>
+                            <Link to="/users/register"><ListItemText primary="Register User" /></Link>
                         </ListItem>
                         <ListItem button className={classes.nested} onClick={() => props.onClose(!props.open)}>
                             <Link to="/"><ListItemText primary="user profile"/></Link>

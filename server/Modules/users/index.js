@@ -4,8 +4,8 @@ const jwt = require("jsonwebtoken");
 const SALT_I = 10;
 const RandomNumber = require("randomstring");
 require("dotenv").config();
-
-const userSchema = mongoose.Schema({
+const Schema = mongoose.Schema;
+const userSchema = new Schema({
     loginid:{
         type: String,
         required: true,
@@ -66,6 +66,12 @@ const userSchema = mongoose.Schema({
     },
     linkid:{
         type:String
+    },
+    createdAt:{
+        type: Date
+    },
+    updatedAt:{
+        type: Date
     },
     active:{
         type:Number,
